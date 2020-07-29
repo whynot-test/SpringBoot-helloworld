@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bi.springboot</groupId>
+  <artifactId>SpringBoot-helloworld</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SpringBoot-helloworld</name>
+  <description>SpringBoot的第一个项目</description>
+  
+  <!-- 用来做依赖管理，几乎将我们用到的所有的依赖的版本都声明好了；版本仲裁中心 -->
+  <!-- 所有的SpringBoot项目都需要引入夫项目 -->
+  <parent>
+	   <groupId>org.springframework.boot</groupId>
+	   <artifactId>spring-boot-starter-parent</artifactId>
+	   <version>2.1.6.RELEASE</version>
+  </parent>
+  <!-- 解决Pom.xml文件报错 -->
+  <properties>
+  	<maven-jar-plugin.version>2.6</maven-jar-plugin.version>
+  </properties>
+ 
+  <!-- Add typical dependencies for a web application -->
+  <dependencies>
+   <dependency>
+     <groupId>org.springframework.boot</groupId>
+     <artifactId>spring-boot-starter-web</artifactId>
+   </dependency>
+  </dependencies>
+  
+</project>
